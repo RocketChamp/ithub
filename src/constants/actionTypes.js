@@ -1,0 +1,17 @@
+export const FETCH_POSTS = 'FETCH_POSTS';
+export const CREATE_POST = 'CREATE_POST';
+export const UPDATE_POST = 'UPDATE_POST';
+export const DELETE_POST = 'DELETE_POST';
+export const FETCH_PROJECTS = 'FETCH_PROJECTS';
+export const CREATE_PROJECT = 'CREATE_PROJECT';
+export const UPDATE_PROJECT = 'UPDATE_PROJECT';
+export const DELETE_PROJECT = 'DELETE_PROJECT';
+export const LIKE_POST = 'LIKE_POST';
+export const FETCH_USERS = 'FETCH_USERS';
+export const CREATE_USER = 'CREATE_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const FOLLOW_USER = 'FOLLOW_USER';
+export const UNFOLLOW_USER = 'UNFOLLOW_USER';
+export const AUTH = 'AUTH';
+export const LOGOUT = 'LOGOUT';
