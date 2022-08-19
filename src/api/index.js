@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://ithub-server.vercel.app" });
+const API = axios.create({ baseURL: process.env.REACT_APP_base_url_custom });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
