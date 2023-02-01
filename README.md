@@ -1,36 +1,48 @@
-# IT-Hub
+# IT-hub
 
-## Description
+## Introduction
 
-IT-hub is a social media app for technical people in the IT field. This platform allows users to create projects and collaborate on them with other like-minded individuals.
+IT-hub is a social media platform for technical people in the IT field. The app provides a space for users to create and collaborate on projects, connect with others, and share their work.
 
 ## Features
 
-- Project creation and management
-- Real-time collaboration with other users
-- Discussion forums for project-related topics
-- Notifications for project activity and updates
+### Account Management
+- Account creation
+- Account editing
+
+### Posting
+- Post updates, thoughts, and projects
+- Like posts
+
+### Project Management
+- Project creation
+- Project editing
+
+### Connections
+- Follow other users
+
+### In Development
+- Commenting on posts
+- Searching for users and projects
+- Improved project posting system
+- Notifications for activity updates
 
 ## Technologies
 
-The app is built with:
+IT-hub is built using the MERN (MongoDB, Express, React, Node.js) stack.
 
-- ReactJS for front-end
-- NodeJS and Express for back-end
-- MongoDB for database management
+## Getting Started
 
-## Installation and Setup
-
-To get started with the app, follow these steps:
+### Installation
 
 1. Clone the repository: `git clone https://github.com/[username]/IT-hub.git`
-2. Install the dependencies: `npm install`
+2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
-## Contributing
+### Contributing
 
-If you're interested in contributing to the project, check out the [contributing guidelines](CONTRIBUTING.md).
+Interested in contributing to IT-hub? Check out our [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+IT-hub is licensed under the [MIT License](LICENSE).
