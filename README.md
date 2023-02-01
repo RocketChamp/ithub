@@ -1,8 +1,8 @@
-# IT-hub
+# IT-Hub
 
 ## Introduction
 
-IT-hub is a social media platform for technical people in the IT field. The app provides a space for users to create and collaborate on projects, connect with others, and share their work.
+IT-hub is a social media platform for technical and not only people in the IT field. The app provides a space for users to create and collaborate on projects, connect with others, and share their work.
 
 ## Features
 
@@ -35,7 +35,7 @@ IT-hub is built using the MERN (MongoDB, Express, React, Node.js) stack.
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/[username]/IT-hub.git`
+1. Clone the repository: `git clone https://github.com/RocketChamp/ithub/`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
