@@ -11,6 +11,7 @@ const Posts = ({ setCurrentId, mode }) => {
   const dispatch = useDispatch();
   const currentUser = JSON.parse(localStorage.getItem("profile"))?.result;
   const id = currentUser?._id;
+
   const user = useSelector((state) => state?.reducers?.users.find(user => user?._id === id));
   const users = useSelector((state) => state?.reducers?.users);
   const posts = useSelector((state) => state?.reducers?.posts);
@@ -22,7 +23,6 @@ const Posts = ({ setCurrentId, mode }) => {
   }
 
   const [friendsPosts, setFriendsPosts] = useState(getFriendsPosts());
-
 
   useEffect(() => {
     dispatch(getUsers())
@@ -36,7 +36,7 @@ const Posts = ({ setCurrentId, mode }) => {
     setFriendsPosts(getFriendsPosts());
   }, [dispatch])
 
-  console.log(getFriendsPosts());
+  // console.log(getFriendsPosts());
 
   return (
     <Row>

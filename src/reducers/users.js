@@ -9,16 +9,16 @@ import {
 export default (users = [], action) => {
   switch (action.type) {
     case FETCH_USERS:
-      console.log("FETCH_USERS PAYLOAD - ", action.payload);
+      // console.log("FETCH_USERS PAYLOAD - ", action.payload);
       users = action.payload;
       return users;
     case UPDATE_USER:
-      console.log("UPDATE_USERS PAYLOAD - ", action.payload);
+      // console.log("UPDATE_USERS PAYLOAD - ", action.payload);
       const currentUser = JSON.parse(localStorage.getItem("profile"));
       const user = { result: action.payload, token: currentUser.token };
       localStorage.setItem("profile", JSON.stringify(user));
       users = [...users, user];
-      console.log("users in UPDATE USERS - ", users);
+      // console.log("users in UPDATE USERS - ", users);
       return users;
     case FOLLOW_USER:
     case UNFOLLOW_USER:
