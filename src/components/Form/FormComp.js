@@ -36,7 +36,6 @@ const FormComp = ({ currentId, setCurrentId }) => {
     clear();
   };
 
-
   if (!user?.result?.name) {
     return <Alert variant="danger">You need to log in to create a post.</Alert>;
   }
@@ -59,7 +58,7 @@ const FormComp = ({ currentId, setCurrentId }) => {
         <Form.Group>
           <Form.Label>Description</Form.Label>
           <Form.Control
-            as='textarea'
+            as="textarea"
             placeholder="Enter Description"
             value={postData.description}
             onChange={(e) =>

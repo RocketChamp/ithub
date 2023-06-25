@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Navbar, Nav, Dropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { GoogleLogout } from "react-google-login";
 // import action types needed and actions for dispatching
@@ -14,16 +14,17 @@ import { BsSearch } from "react-icons/bs";
 function NavbarComp({ localUser }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
+  // const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
     dispatch(getUsers());
   }, [dispatch]);
 
-  const handleChange = (e) => {
-    e.preventDefault();
-    setSearchParams(e.target.value);
-  };
+  // SEARCH CAPABILITIES
+  // const handleChange = (e) => {
+  //   e.preventDefault();
+  //   setSearchParams(e.target.value);
+  // };
 
   const clientId = process.env.REACT_APP_clientId;
 

@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from "react";
 
 const useSearch = () => {
   const searchInput = document.querySelector(".navbar_search_input");
@@ -7,9 +7,9 @@ const useSearch = () => {
 
   useEffect(() => {
     setSearchQuery(searchInput.value());
-  })
-  
-  return searchQuery;
-}
+  }, [searchInput]);
 
-export default Search
+  return searchQuery;
+};
+
+export default useSearch;
